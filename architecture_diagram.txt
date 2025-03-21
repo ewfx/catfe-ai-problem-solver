@@ -1,0 +1,20 @@
+Architecture Diagram
+
+
++--------------------+       +--------------------+
+|  Test Case         |       |  Banking Scenarios |
+|  Generator         |       |  (KYC, Loan, etc.) |
++--------------------+       +--------------------+
+         |                           |
+         v                           v
++--------------------+       +--------------------+
+|  AI Agent          |       |  System Monitor    |
+|  (OpenAI, Hugging  |       |  (File Changes)    |
+|  Face, etc.)       |       +--------------------+
++--------------------+
+         |
+         v
++--------------------+
+|  Test Execution    |
+|  and Reporting     |
++--------------------+
