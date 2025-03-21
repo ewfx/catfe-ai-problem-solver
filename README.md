@@ -1,7 +1,9 @@
+
 # Context-Aware Testing System for Financial Ecosystems
 
 ## Overview
 This project implements a context-aware testing system that dynamically generates, modifies, and adapts test cases for financial ecosystems. It leverages Generative AI tools like OpenAI, Hugging Face, LangChain, GPT-J, LLaMA, and Agentic-AI to automate test scenario generation and execution.
+
 
 ## Features
 - AI-driven test case generation and adaptation.
@@ -24,6 +26,7 @@ This project implements a context-aware testing system that dynamically generate
    ```bash
    python main.py
    ```
+
 
 ## Testing Instructions
 1. **Unit Tests**:
