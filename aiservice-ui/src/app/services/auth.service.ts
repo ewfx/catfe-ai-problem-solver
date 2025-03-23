@@ -15,14 +15,11 @@ export class AuthService {
   }
 
   login(credentials: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, credentials);
+    return this.http.post(`${this.apiUrl}/login`, credentials,{ responseType: 'text' });
   }
 
   logout(): Observable<any> {
     return this.http.post(`${this.apiUrl}/logout`, {});
   }
 
-  isAuthenticated(): boolean {
-    return !!localStorage.getItem('token');
-  }
 }

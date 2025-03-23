@@ -19,9 +19,9 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable()) // Disable CSRF protection
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll() // Allow public access to authentication endpoints
-                .anyRequest().authenticated() // Protect all other endpoints
-            ); // Enable basic authentication
+                .anyRequest().permitAll() // Allow unrestricted access to all endpoints
+            )
+            .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable())); // Updated to resolve deprecation
         return http.build();
     }
 
