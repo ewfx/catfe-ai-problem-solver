@@ -1,25 +1,119 @@
-input {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
+/* General container styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #004481, #0074b7); /* Wells Fargo-like colors */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card styling */
+.login-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
   width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
+/* Logo styling */
+.login-logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Title and subtitle */
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #004481;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.login-form .form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.login-form .form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #cccccc;
   border-radius: 4px;
-  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.login-form .form-control:focus {
+  border-color: #0074b7;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 116, 183, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #0074b7;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn-primary:hover {
+  background-color: #005f99;
 }
 
+/* Error message */
 .error-message {
-  color: red;
-  font-size: 0.9em;
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Footer links */
+.login-footer {
+  margin-top: 1.5rem;
+}
+
+.forgot-password {
+  color: #0074b7;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.signup-text {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.signup-text a {
+  color: #0074b7;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
 }

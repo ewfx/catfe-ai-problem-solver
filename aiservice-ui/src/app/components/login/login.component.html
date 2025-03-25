@@ -1,9 +1,40 @@
-<h2>Login</h2>
-<form (ngSubmit)="login()">
-  <label>Username:</label>
-  <input [(ngModel)]="credentials.username" name="username" required />
-  <label>Password:</label>
-  <input [(ngModel)]="credentials.password" name="password" type="password" required />
-  <button type="submit">Login</button>
-</form>
-<p *ngIf="errorMessage">{{ errorMessage }}</p>
+<div class="login-container">
+  <div class="login-card">
+    <img src="assets/logo.png" alt="Logo" class="login-logo" />
+    <h2 class="login-title">Welcome Back</h2>
+    <p class="login-subtitle">Please sign in to your account</p>
+    <form (ngSubmit)="login()" class="login-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          id="username"
+          [(ngModel)]="credentials.username"
+          name="username"
+          class="form-control"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          [(ngModel)]="credentials.password"
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+    </form>
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    <div class="login-footer">
+      <a href="#" class="forgot-password">Forgot Password?</a>
+      <p class="signup-text">
+        Don't have an account? <a href="/register">Sign Up</a>
+      </p>
+    </div>
+  </div>
+</div>

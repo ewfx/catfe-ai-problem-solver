@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -19,8 +19,12 @@ export class LoginComponent {
   login() {
     this.authService.login(this.credentials).subscribe({
       next: (response) => {
-        localStorage.setItem('token', response.token);
-        this.router.navigate(['/logout']);
+        console.log(response); // Log the response for debugging
+        if (response === 'Login successful') {
+          this.router.navigate(['/logout']); // Navigate to the logout page
+        } else {
+          this.errorMessage = 'Unexpected response from the server';
+        }
       },
       error: () => {
         this.errorMessage = 'Invalid credentials';

@@ -1,1 +1,74 @@
-/* This file is intentionally left blank. */
+/* filepath: c:\Hackathon2025\catfe-ai-problem-solver\aiservice-ui\src\app\components\logout\logout.component.css */
+
+/* General container styling */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #004481, #0074b7); /* Wells Fargo-like colors */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Card styling */
+  .logout-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .logout-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title and subtitle */
+  .logout-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #004481;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logout-subtitle {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #0074b7;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005f99;
+  }
+  
+  .btn-secondary {
+    background-color: #cccccc;
+    color: #333333;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #aaaaaa;
+  }
