@@ -1,0 +1,45 @@
+{
+    "module": "login.component",
+    "ui_elements": [
+        {
+            "name": "username_field",
+            "selector": "//*[@id='username']",
+            "type": "input",
+            "placeholder": "Enter your username",
+            "required": true
+        },
+        {
+            "name": "password_field",
+            "selector": "//*[@id='password']",
+            "type": "input",
+            "placeholder": "Enter your password",
+            "required": true
+        },
+        {
+            "name": "sign_in_button",
+            "selector": "//button[@type='submit']",
+            "type": "button",
+            "text": "Sign In"
+        }
+    ],
+    "test_cases": [
+        {
+            "scenario": "Valid Registration",
+            "username": "validuser",
+            "password": "validpassword",
+            "expected": "Registration successful"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Username",
+            "username": "",
+            "password": "validpassword",
+            "expected": "Username is required"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Password",
+            "username": "validuser",
+            "password": "",
+            "expected": "Password is required"
+        }
+    ]
+}
