@@ -1,6 +1,5 @@
 # 🚀 Project Name
-Edited 
-addd commnts  
+Edited   
 ## 📌 Table of Contents
 - [Introduction](#introduction)
 - [Demo](#demo)
@@ -36,26 +35,46 @@ Briefly outline the technologies, frameworks, and tools used in development.
 ## 🚧 Challenges We Faced
 Describe the major technical or non-technical challenges your team encountered.
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   cd catfe-ai-problem-solver
    ```
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+3. Run the system:
+   ```bash
+   python main.py
+   ```
+
+
+## Testing Instructions
+1. **Unit Tests**:
+   - Run the unit tests using `pytest`:
+     ```bash
+     pytest
+     ```
+
+2. **Manual Testing**:
+   - Modify the `main.py` file to test specific scenarios by changing the `prompt` variable.
+   - Example: Test fraud detection by updating the prompt:
+     ```python
+     prompt = "Generate a test case for real-time fraud detection in a banking system."
+     ```
+
+3. **Simulate Real-World Activities**:
+   - Use the `simulate_real_world_activity` function in `test_scenarios.py` to simulate activities like KYC validation or loan approvals:
+     ```python
+     simulate_real_world_activity("KYC validation")
+     ```
+
+## Deliverables
+- Architecture diagram (`architecture-diagram.png`).
+- Presentation (`presentation.pptx`).
+- Codebase for the testing system.
+- Optionally, a demo video showcasing the solution.
