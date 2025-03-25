@@ -41,6 +41,12 @@ def main():
     ui_context = generate_ui_context(html_file_path)
     print("Extracted UI Context:", ui_context)
 
+    # Define the scenario
+    scenario = "Validate the registration functionality for valid and invalid inputs."
+    test_scripts = generator.generate_test_case(scenario, context=ui_context, use_openai=True)
+    print("Generated Test Scripts:")
+    print(test_scripts)
+
 
 if __name__ == "__main__":
     main()
