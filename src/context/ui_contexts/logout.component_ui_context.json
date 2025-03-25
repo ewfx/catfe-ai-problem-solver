@@ -1,0 +1,37 @@
+{
+    "module": "logout.component",
+    "ui_elements": [
+        {
+            "name": "logout_button",
+            "selector": "//button[@type='button']",
+            "type": "button",
+            "text": "Logout"
+        },
+        {
+            "name": "cancel_button",
+            "selector": "//button[@type='button']",
+            "type": "button",
+            "text": "Cancel"
+        }
+    ],
+    "test_cases": [
+        {
+            "scenario": "Valid Registration",
+            "username": "validuser",
+            "password": "validpassword",
+            "expected": "Registration successful"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Username",
+            "username": "",
+            "password": "validpassword",
+            "expected": "Username is required"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Password",
+            "username": "validuser",
+            "password": "",
+            "expected": "Password is required"
+        }
+    ]
+}
