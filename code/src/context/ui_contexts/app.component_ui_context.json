@@ -1,0 +1,24 @@
+{
+    "module": "app.component",
+    "ui_elements": [],
+    "test_cases": [
+        {
+            "scenario": "Valid Registration",
+            "username": "validuser",
+            "password": "validpassword",
+            "expected": "Registration successful"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Username",
+            "username": "",
+            "password": "validpassword",
+            "expected": "Username is required"
+        },
+        {
+            "scenario": "Invalid Registration - Missing Password",
+            "username": "validuser",
+            "password": "",
+            "expected": "Password is required"
+        }
+    ]
+}
