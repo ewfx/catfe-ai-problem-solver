@@ -1,14 +1,40 @@
+# 🚀 Project Name
+Edited 
+i am able to edit  
+## 📌 Table of Contents
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Inspiration](#inspiration)
+- [What It Does](#what-it-does)
+- [How We Built It](#how-we-built-it)
+- [Challenges We Faced](#challenges-we-faced)
+- [How to Run](#how-to-run)
+- [Tech Stack](#tech-stack)
+- [Team](#team)
 
-# Context-Aware Testing System for Financial Ecosystems
+---
 
-## Overview
-This project implements a context-aware testing system that dynamically generates, modifies, and adapts test cases for financial ecosystems. It leverages Generative AI tools like OpenAI, Hugging Face, LangChain, GPT-J, LLaMA, and Agentic-AI to automate test scenario generation and execution.
+## 🎯 Introduction
+A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
 
+## 🎥 Demo
+🔗 [Live Demo](#) (if applicable)  
+📹 [Video Demo](#) (if applicable)  
+🖼️ Screenshots:
 
-## Features
-- AI-driven test case generation and adaptation.
-- Real-world banking activities: KYC validation, loan approvals, payment services testing, fraud detection, and compliance monitoring.
-- Self-updating test cases based on system changes.
+![Screenshot 1](link-to-image)
+
+## 💡 Inspiration
+What inspired you to create this project? Describe the problem you're solving.
+
+## ⚙️ What It Does
+Explain the key features and functionalities of your project.
+
+## 🛠️ How We Built It
+Briefly outline the technologies, frameworks, and tools used in development.
+
+## 🚧 Challenges We Faced
+Describe the major technical or non-technical challenges your team encountered.
 
 ## Setup Instructions
 1. Clone the repository:

@@ -1,11 +1,4 @@
 openai
-langchain
-transformers
-huggingface-hub
-llama-index
-agentic-ai
-pandas
-numpy
-scikit-learn
-flask
-pytest
+google-generativeai
+beautifulsoup4
+selenium
