@@ -18,23 +18,25 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
-  this.errorMessage = '';
-  this.successMessage =''
+ 
     if (!this.credentials.username) {
+       this.errorMessage = '';
+      this.successMessage =''
       this.errorMessage = 'Username is required';
-      this.successMessage = ''; 
       return;
     }
   
     if (!this.credentials.password) {
+      this.errorMessage = '';
+      this.successMessage =''
       this.errorMessage = 'Password is required';
-      this.successMessage = ''; 
       return;
     }
   
     this.authService.login(this.credentials).subscribe({
       next: (response) => {
-        console.log(response); 
+        console.log(response);
+        this.credentials = { username: '', password: '' };
         if (response === 'Login successful') {
           this.successMessage = 'Login successful';
           this.errorMessage = '';

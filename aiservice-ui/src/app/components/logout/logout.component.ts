@@ -16,9 +16,16 @@ export class LogoutComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   logout() {
-    this.authService.logout().subscribe(() => {
-      localStorage.removeItem('token');
-      this.router.navigate(['/login']);
+    this.authService.logout().subscribe({
+      next: () => {
+        // Redirect to the login page after successful logout
+        this.router.navigate(['/login']);
+      },
+      error: () => {
+        // Handle logout failure (optional)
+        console.error('Logout failed. Please try again.');
+        this.router.navigate(['/login']);
+      }
     });
   }
 }
