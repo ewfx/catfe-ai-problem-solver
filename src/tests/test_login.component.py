@@ -16,7 +16,7 @@ class LoginTest(unittest.TestCase):
                 {'name': 'sign_in_button', 'selector': "//button[@type='submit']", 'type': 'button', 'text': 'Sign In'}
             ],
             'test_cases': [
-                {'scenario': 'Valid Registration', 'username': 'user', 'password': 'password', 'expected': 'Registration successful'},
+                {'scenario': 'Valid Registration', 'username': 'user', 'password': 'password', 'expected': 'Login successful'},
                 {'scenario': 'Invalid Registration - Missing Username', 'username': '', 'password': 'password', 'expected': 'Username is required'},
                 {'scenario': 'Invalid Registration - Missing Password', 'username': 'user', 'password': '', 'expected': 'Password is required'}
             ]

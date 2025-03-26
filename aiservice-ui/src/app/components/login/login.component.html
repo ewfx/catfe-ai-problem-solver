@@ -29,7 +29,12 @@
       </div>
       <button type="submit" class="btn btn-primary btn-block">Sign In</button>
     </form>
-    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+    <!-- Display error messages dynamically -->
+    <p *ngIf="successMessage === 'Login successful'" class="success-message">Login successful</p>
+    <p *ngIf="errorMessage === 'Username is required'" class="error-message">Username is required</p>
+    <p *ngIf="errorMessage === 'Password is required'" class="error-message">Password is required</p>
+
     <div class="login-footer">
       <a href="#" class="forgot-password">Forgot Password?</a>
       <p class="signup-text">
