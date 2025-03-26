@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [RouterOutlet],
   template: `
     <div>
-      <h1>{{ title }}</h1>
+      <!-- <h1>{{ title }}</h1> -->
       <router-outlet></router-outlet>
     </div>
   `,
